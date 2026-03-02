@@ -48,7 +48,7 @@ The PCB trace routing and pinout are fully compatible with the firmware configur
 To ensure a successful build, follow this specific soldering order to avoid mechanical interference:
 
 1. **Phase 1 (Low Profile):** Solder the **MicroSD slot**, the **Shift Register (SN74HC165D)**, and all **SMD Resistors**. These are difficult to access once larger components are installed.
-2. **Phase 2 (Display):** Install the **LCD Screen**. Ensure it is aligned perfectly before soldering the ribbon/pins.
+2. **Phase 2 (Display):** Install the **LCD screen**. Make sure it is perfectly aligned before soldering the ribbon cable/pins. After soldering, trim off any protruding pins at the back so they don't interfere with subsequent installation of **external GPIOs**.
 3. **Phase 3 (GPIOs):** Solder the **External GPIOs** and trim the protruding pins so that they do not interfere with the installation of the CC1101
 4. **Phase 4 (Final):** Solder all remaining components, including the MCU, NFC module, and buttons.
 
