@@ -21,22 +21,25 @@ The PCB trace routing and pinout are fully compatible with the firmware configur
 
 ## Bill of Materials (BOM)
 
-| Component | Description |
-| --- | --- |
-| [STM32WB55CGU6](https://ali.click/fo7d11q) | **Main MCU:** Dual-core processor with BLE support. |
-| [AS07-M1101S](https://ali.click/gs7d118) | **Sub-GHz Module:** Based on CC1101 for radio communication. |
-| [ST7565R 1.4 inch](https://ali.click/oz7d110) | **Screen:** 128x64 Monochrome LCD. |
-| [ST25R3916](https://www.elechouse.com/product/st25r3916_nfc_reader/) | **NFC Chip:** High-performance NFC/RFID reader. |
-| [SN74HC165D](https://ali.click/ph8d11m) | **Shift Register:** Manages button inputs to save GPIO pins. |
-| [TP4056](https://ali.click/fu9d11d) | **Battery Charger:** Manages Li-Po charging cycles. |
-| [Type-C Connector](https://ali.click/qy9d117) | **USB Interface:** For charging and PC data connection. |
-| **IR LED** | **IR Send:** High-power infrared emitter. |
-| **IR Receiver** | **IR Receive:** Demodulator for capturing remote signals. |
-| **3.7V Battery** | **Power:** Standard Li-Po battery. |
-| **SMD Resistors 0603** | **Passives:** Various values (4.7kΩ, 190Ω, 470Ω, 10kΩ). |
-| **MMBT2222A** | **N-Channel Transistor:** For switching IR LEDs. |
-| **1N4148W** | **SMD Diodes:** Signal protection and logic. |
-| **SMD Tactile Buttons** | **Input:** Navigation and "Back" buttons. |
+| Component | Description | quantity |
+| --- | --- | --- |
+| [STM32WB55CGU6](https://ali.click/fo7d11q) | **Main MCU:** Dual-core processor with BLE support. | 1x |
+| [AS07-M1101S](https://ali.click/gs7d118) | **Sub-GHz Module:** Based on CC1101 for radio communication. | 1x |
+| [ST7565R 1.4 inch](https://ali.click/oz7d110) | **Screen:** 128x64 Monochrome LCD. | 1x |
+| [ST25R3916](https://www.elechouse.com/product/st25r3916_nfc_reader/) | **NFC Chip:** High-performance NFC/RFID reader. | 1x |
+| [SN74HC165D](https://ali.click/ph8d11m) | **Shift Register:** Manages button inputs to save GPIO pins. | 1x |
+| [TP4056](https://ali.click/fu9d11d) | **Battery Charger:** Manages Li-Po charging cycles. | 1x |
+| [Type-C Connector](https://ali.click/qy9d117) | **USB Interface:** For charging and PC data connection. | 1x |
+| **IR LED** | **IR Send:** High-power infrared emitter. | 1x |
+| **IR Receiver** | **IR Receive:** Demodulator for capturing remote signals. | 1x |
+| **3.7V Battery** | **Power:** Standard Li-Po battery. | 1x |
+| **SMD Resistors 0603** | **4.7kΩ** | 1x |
+| **SMD Resistors 0603** | **470Ω** | 1x |
+| **SMD Resistors 0603** | **190Ω** | 1x |
+| **SMD Resistors 0603** | **10kΩ** | 8x |
+| **MMBT2222A** | **N-Channel Transistor:** For switching IR LEDs. | 1x |
+| **1N4148W** | **SMD Diodes:** Signal protection and logic. | 6x |
+| **SMD Tactile Buttons** | **Input:** Navigation and "Back" buttons. | 6x |
 
 ---
 
@@ -46,7 +49,8 @@ To ensure a successful build, follow this specific soldering order to avoid mech
 
 1. **Phase 1 (Low Profile):** Solder the **MicroSD slot**, the **Shift Register (SN74HC165D)**, and all **SMD Resistors**. These are difficult to access once larger components are installed.
 2. **Phase 2 (Display):** Install the **LCD Screen**. Ensure it is aligned perfectly before soldering the ribbon/pins.
-3. **Phase 3 (Final):** Solder all remaining components, including the MCU, NFC chip, and buttons.
+3. **Phase 3 (GPIOs):** Solder the **External GPIOs** and trim the protruding pins so that they do not interfere with the installation of the CC1101
+4. **Phase 4 (Final):** Solder all remaining components, including the MCU, NFC module, and buttons.
 
 ### Antenna Installation
 
