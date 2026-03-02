@@ -34,10 +34,11 @@ The PCB trace routing and pinout are fully compatible with the firmware configur
 | **IR LED** | **IR Send:** High-power infrared emitter. | 1x |
 | **IR Receiver** | **IR Receive:** Demodulator for capturing remote signals. | 1x |
 | **3.7V Battery** | **Power:** Standard Li-Po battery. | 1x |
-| **SMD Resistors 0603** | **4.7kΩ** | 1x |
-| **SMD Resistors 0603** | **470Ω** | 1x |
-| **SMD Resistors 0603** | **190Ω** | 1x |
-| **SMD Resistors 0603** | **10kΩ** | 10x |
+| **SMD Resistors 0603 4.7kΩ** | **R16** | 1x |
+| **SMD Resistors 0603 470Ω** | **R8** | 1x |
+| **SMD Resistors 0603 190Ω** | **R14** | 1x |
+| **SMD Resistors 0603 10kΩ** | **R1,R2,R3,R4,R5,R6,R7,R9,R10** | 9x |
+| **SMD Resistors 0603 1kΩ** | **R15** | 1x |
 | **MMBT2222A** | **N-Channel Transistor:** For switching IR LEDs. | 1x |
 | **1N4148W** | **SMD Diodes:** Signal protection and logic. | 6x |
 | **SMD Tactile Buttons** | **Input:** Navigation and "Back" buttons. | 6x |
