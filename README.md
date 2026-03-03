@@ -28,17 +28,20 @@ The PCB trace routing and pinout are fully compatible with the firmware configur
 | [ST7565R 1.4 inch](https://ali.click/oz7d110) | **Screen:** 128x64 Monochrome LCD. | 1x |
 | [ST25R3916](https://www.elechouse.com/product/st25r3916_nfc_reader/) | **NFC Chip:** High-performance NFC/RFID reader. | 1x |
 | [SN74HC165D](https://ali.click/ph8d11m) | **Shift Register:** Manages button inputs to save GPIO pins. | 1x |
-| [TP4056](https://ali.click/fu9d11d) | **Battery Charger:** Manages Li-Po charging cycles. | 1x |
-| [Type-C Connector](https://ali.click/qy9d117) | **USB Interface:** For charging and PC data connection. | 1x |
+| **SMD Type-C 16P Connector** | **USB Interface:** For charging and PC data connection. | 1x |
 | [SMD MicroSD TF](https://ali.click/52ze11y) | **MicroSD Slot:** Used for storing signal databases (NFC/Sub-GHz/IR) | 1x |
 | **IR LED** | **IR Send:** High-power infrared emitter. | 1x |
 | **IR Receiver** | **IR Receive:** Demodulator for capturing remote signals. | 1x |
 | **3.7V Battery** | **Power:** Standard Li-Po battery. | 1x |
-| **SMD Resistors 0603 4.7kΩ** | **R16** | 1x |
-| **SMD Resistors 0603 470Ω** | **R8** | 1x |
-| **SMD Resistors 0603 190Ω** | **R14** | 1x |
 | **SMD Resistors 0603 10kΩ** | **R1,R2,R3,R4,R5,R6,R7,R9,R10** | 9x |
-| **SMD Resistors 0603 1kΩ** | **R15** | 1x |
+| **SMD Resistors 0603 470Ω** | **R8** | 1x |
+| **SMD Resistors 0603 1.2kΩ** | **R11** | 1x |
+| **SMD Resistors 0603 1.0kΩ** | **R12, R13, R18** | 3x |
+| **SMD Resistors 0603 5.1kΩ** | **R14, R15** | 2x |
+| **SMD Resistors 0603 4.7kΩ** | **R16, R19** | 2x |
+| **SMD Resistors 0603 190Ω** | **R17** | 1x |
+| **SMD LED 0603** | **Needed to indicate charging** | 2x |
+| **SMD TP4056** | **Battery Charger:** Manages Li-Po charging cycles. | 1x |
 | **MMBT2222A** | **N-Channel Transistor:** For switching IR LEDs. | 1x |
 | **1N4148W** | **SMD Diodes:** Signal protection and logic. | 6x |
 | **SMD Tactile Buttons** | **Input:** Navigation and "Back" buttons. | 6x |
