@@ -39,7 +39,7 @@ The PCB trace routing and pinout are fully compatible with the firmware configur
 | **SMD Resistors 0603 1.0kΩ** | **R12, R13, R18** | 3x |
 | **SMD Resistors 0603 5.1kΩ** | **R14, R15** | 2x |
 | **SMD Resistors 0603 4.7kΩ** | **R16, R19** | 2x |
-| **SMD Resistors 0603 190Ω** | **R17** | 1x |
+| **SMD Resistors 0603 180Ω** | **R17** | 1x |
 | **SMD LED 0603** | **Needed to indicate charging** | 2x |
 | **SMD TP4056** | **Battery Charger:** Manages Li-Po charging cycles. | 1x |
 | **MMBT2222A** | **N-Channel Transistor:** For switching IR LEDs. | 1x |
