@@ -53,8 +53,7 @@ To ensure a successful build, follow this specific soldering order to avoid mech
 
 1. **Phase 1 (Low Profile):** Solder the **MicroSD slot**, the **Shift Register (SN74HC165D)**, and all **SMD Resistors**. These are difficult to access once larger components are installed.
 2. **Phase 2 (Display):** Install the **LCD screen**. Make sure it is perfectly aligned before soldering the ribbon cable/pins. After soldering, trim off any protruding pins at the back so they don't interfere with subsequent installation of **external GPIOs**.
-3. **Phase 3 (GPIOs):** Solder the **External GPIOs** and trim the protruding pins so that they do not interfere with the installation of the CC1101
-4. **Phase 4 (Final):** Solder all remaining components, including the MCU, NFC module, and buttons.
+3. **Phase 3 (Final):** Solder all remaining components, including the MCU, NFC module, and buttons.
 
 ### Antenna Installation
 
@@ -68,7 +67,7 @@ The Sub-GHz antenna requires a two-step connection:
 ## GPIO Pinout Guide
 
 Refer to the image below for the correct pin mapping when connecting external modules or sensors.
-<img width="948" height="339" alt="image" src="https://github.com/user-attachments/assets/70a5ab3a-253f-46a1-ba61-ce2fcb7322e9" />
+![externalHeader](images/externalHeader.png)
 
 
 ---
